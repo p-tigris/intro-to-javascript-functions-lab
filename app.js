@@ -65,7 +65,7 @@ function isCharAVowel(character) {
 
 
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel("u"));
 
 /*
 Exercise 4: generateEmail()
@@ -123,20 +123,14 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(firstNumber, secondNumber, thirdNumber) {
-    if (firstNumber > secondNumber) {
-        if (firstNumber > thirdNumber) {
-            return firstNumber
-        } else {
-            return thirdNumber
-        }
+    if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+        return firstNumber
+    } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+        return secondNumber
     } else {
-        if (secondNumber > thirdNumber) {
-            return secondNumber
-        } else {
-            return thirdNumber
+        return thirdNumber
         }
     }
-}
 
 
 
