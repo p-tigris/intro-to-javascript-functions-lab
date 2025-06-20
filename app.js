@@ -125,7 +125,7 @@ Complete the exercise in the space below:
 function maxOfThree(firstNumber, secondNumber, thirdNumber) {
     if (firstNumber > secondNumber && firstNumber > thirdNumber) {
         return firstNumber
-    } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+    } else if (secondNumber > thirdNumber) {
         return secondNumber
     } else {
         return thirdNumber
